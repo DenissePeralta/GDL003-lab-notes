@@ -5,33 +5,37 @@ html {
   width: 100%;
 }
 
+/*App.js App component */
 .principalContainer {
   text-align: center;
 }
 
+/*LogIn.js LogIn component */
 .loginContainer {
   background: url("./Images/BackgroundDesktop.jpg") no-repeat center fixed;
   background-size: cover;
+  font-size: 17px;
   height: 625px;
   width: 100%;
-  font-size: 17px;
 }
 
 .loginLogo {
   width: 26%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*LogIn.js LogInItems component */
+.loginButton {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  padding: 10px;
+  width: 26%;
 }
 
-.App-link {
-  color: #61dafb;
+.loginButton img {
+  margin-right: 35px;
 }
