@@ -39,3 +39,16 @@ html {
 .loginButton img {
   margin-right: 35px;
 }
+
+/*NotesTimeline.js NotesTimeline component */
+.notesContainer {
+  background: url("./Images/BackgroundDesktop2.jpg") no-repeat center fixed;
+  background-size: cover;
+  font-size: 17px;
+  height: 625px;
+  width: 100%;
+}
+
+.notesLogo {
+  width: 20%;
+}
