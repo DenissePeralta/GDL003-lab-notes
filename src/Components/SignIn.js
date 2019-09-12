@@ -1,10 +1,11 @@
-import React from 'react';
-import LogIn from './LogIn';
+import React, { Component } from "react";
+import logo from "../Images/HourTimeLogo.png";
+import "../App.css";
 
 const SignIn = () => {
     return (
       <div>
-      <LogIn/>
+
       </div>
     );
 };
