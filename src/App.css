@@ -6,33 +6,44 @@ html {
   width: 100%;
 }
 
-/*LogIn.js LogIn component */
-.loginContainer {
+/*LogIn.js-SignUp.js LogIn and SignUp components */
+.loginContainer, .signupContainer {
   background: url("./Images/BackgroundDesktop.jpg") no-repeat center fixed;
   background-size: cover;
   font-size: 17px;
   height: 625px;
   width: 100%;
+  color: #000000;
 }
 
 .loginLogo {
   width: 26%;
 }
+.emailInput, .passwordInput {
+  background: rgba(255,255,255,0.4  );
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  padding: 8px;
+  width: 22%;
+}
 
-.loginButton {
+.loginButtons, .signupButton {
   background: #FFFFFF;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 18px;
-  padding: 10px;
-  width: 26%;
+  margin-bottom: 15px;
+  padding: 8px;
+  width: 18%;
 }
 
-.loginButton img {
-  margin-right: 35px;
+.loginButtons img {
+  margin-right: 10px;
 }
 
 /*NotesTimeline.js NotesTimeline component */

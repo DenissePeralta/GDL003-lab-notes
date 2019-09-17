@@ -1,4 +1,7 @@
- const firebaseConfig = {
+import * as firebase from "firebase/app";
+import "firebase/auth";
+
+ const firebaseConfig = firebase.initializeApp({
   apiKey: "AIzaSyBpYmOCeEXCsUbPwOTWfuCnOmzIb6F6Qlg",
   authDomain: "lab-notes-2c58f.firebaseapp.com",
   databaseURL: "https://lab-notes-2c58f.firebaseio.com",
@@ -6,6 +9,6 @@
   storageBucket: "",
   messagingSenderId: "594717110401",
   appId: "1:594717110401:web:63e50a2f0d45ad26bedd80"
-}
+});
 
 export default firebaseConfig;

@@ -2,10 +2,11 @@ import React from "react";
 import NavMenu from "./NavMenu";
 import "../App.css";
 
-const NotesTimeline = (props) => {
+const NotesTimeline = () => {
   return (
     <div className="notesContainer">
-      <NavMenu user={props.user} signOut={props.signOut}/>
+      <NavMenu />
+      {/*<NavMenu user={props.user} signOut={props.signOut}/>*/}
     </div>
   );
 };
