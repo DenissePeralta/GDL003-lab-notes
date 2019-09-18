@@ -13,7 +13,11 @@ const SignUp = ({ history }) => {
       await firebaseConfig.auth().createUserWithEmailAndPassword(email.value, password.value);
       history.push("/notes");
     } catch (error) {
-      alert(error);
+      if (email.value.length === 0 || password.value.length === 0 ) {
+        alert("Please enter a value in both fields");
+      } else {
+        alert(error);
+      }
     }
   }, [history]);
 

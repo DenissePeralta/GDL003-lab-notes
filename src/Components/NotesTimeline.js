@@ -6,7 +6,6 @@ const NotesTimeline = () => {
   return (
     <div className="notesContainer">
       <NavMenu />
-      {/*<NavMenu user={props.user} signOut={props.signOut}/>*/}
     </div>
   );
 };
