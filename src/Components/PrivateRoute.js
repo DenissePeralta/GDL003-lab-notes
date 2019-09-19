@@ -5,10 +5,9 @@ import { AuthContext } from "./AuthState";
 const PrivateRoute = ({ component: RouteComponent, ...rest}) => {
   const {currentUser} = useContext(AuthContext);
   return (
-    <Route
-      {...rest}
+    <Route {...rest}
       render = {routeProps =>
-        !!currentUser
+        currentUser
         ? (<RouteComponent {...routeProps}/>)
         : (<Redirect to={"/"}/>)
       }

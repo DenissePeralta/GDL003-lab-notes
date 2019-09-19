@@ -16,7 +16,7 @@ const LogIn = ({ history }) => {
       history.push("/notes");
     } catch (error) {
       if (email.value.length === 0 || password.value.length === 0 ) {
-        alert("Please enter a value in both fields");
+        alert("⚠️ Please enter a value in both fields");
       } else {
         alert(error);
       }
@@ -29,7 +29,7 @@ const LogIn = ({ history }) => {
   }
 
   return (
-    <div className="loginContainer">
+    <section className="loginContainer">
       <img src={logo} className="loginLogo" alt="logo"/>
       <p>Create notes to keep everything in mind. Please, log in to start or <Link to="/signup">sign up</Link>.</p>
       <form onSubmit={handleLogIn}>
@@ -38,7 +38,7 @@ const LogIn = ({ history }) => {
         <button className="loginButtons" type="submit"> Log in </button><br></br>
       </form>
       <LogInSocial />
-    </div>
+    </section>
   );
 };
 

@@ -14,7 +14,7 @@ const SignUp = ({ history }) => {
       history.push("/notes");
     } catch (error) {
       if (email.value.length === 0 || password.value.length === 0 ) {
-        alert("Please enter a value in both fields");
+        alert("⚠️ Please enter a value in both fields");
       } else {
         alert(error);
       }
@@ -22,7 +22,7 @@ const SignUp = ({ history }) => {
   }, [history]);
 
     return (
-      <div className="signupContainer">
+      <section className="signupContainer">
         <img src={logo} className="loginLogo" alt="logo" />
         <p>Please enter the require information to sign up or return to the <Link to="/">log in</Link> page.</p>
         <form onSubmit={handleSignUp}>
@@ -30,7 +30,7 @@ const SignUp = ({ history }) => {
           <input className="passwordInput" name="password" type="password" placeholder="🔒 Enter a password"/><br></br>
           <button className="signupButton" type="submit"> Sign Up </button>
         </form>
-      </div>
+      </section>
     );
 };
 

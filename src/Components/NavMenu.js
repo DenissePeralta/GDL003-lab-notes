@@ -9,17 +9,17 @@ const NavMenu = () => {
   const { currentUser } = useContext(AuthContext);
   if (currentUser.displayName === null) {
     return (
-      <div className="navContainer">
-      <img src={logo} className="navLogo" alt="logo" />
-      <a href=" " className="logoutButton" onClick={ () => firebaseConfig.auth().signOut()}> {currentUser.email} Log out <img src={logOut} alt="log out"/></a>
-      </div>
+      <section className="navContainer">
+        <img src={logo} className="navLogo" alt="logo" />
+        <a href=" " className="logoutButton" onClick={ () => firebaseConfig.auth().signOut()}> {currentUser.email} Log out <img src={logOut} alt="log out"/></a>
+      </section>
     );
   } else {
     return (
-      <div className="navContainer">
-      <img src={logo} className="navLogo" alt="logo" />
-      <a href=" " className="logoutButton" onClick={ () => firebaseConfig.auth().signOut()}> {currentUser.displayName} Log out <img src={logOut} alt="log out"/></a>
-      </div>
+      <section className="navContainer">
+        <img src={logo} className="navLogo" alt="logo" />
+        <a href=" " className="logoutButton" onClick={ () => firebaseConfig.auth().signOut()}> {currentUser.displayName} Log out <img src={logOut} alt="log out"/></a>
+      </section>
     );
   }
 };
