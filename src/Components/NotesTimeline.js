@@ -44,9 +44,9 @@ class NotesTimeline extends Component {
   render () {
     return (
       <section className="notesContainer">
-      <NavMenu />
-      <NotesForm />
-      <NotesList notes={this.state.notes}/>
+        <NavMenu />
+        <NotesForm />
+        <NotesList notes={this.state.notes}/>
       </section>
     );
   }

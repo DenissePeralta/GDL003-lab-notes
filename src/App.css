@@ -163,7 +163,7 @@ code {
   float: left;
   grid-gap: 5px;
   grid-template-columns: 99%;
-  grid-template-rows: 23% 58% 15%;
+  grid-template-rows: 23% 50% 24%;
   height: 190px;
   margin: 7px;
   padding: 8px;
@@ -190,10 +190,20 @@ code {
   word-wrap: break-word;
 }
 
-.deleteButton {
-  align-self: stretch;
+.notePostedButtons {
+  align-self: center;
   cursor: pointer;
   grid-column-start: 1;
   grid-row-start: 3;
+  justify-self: center;
   padding: 3px;
+}
+
+.deleteButton, .editButton {
+  margin: 2px;
+  width: 24px;
+}
+
+.deleteButton:hover, .editButton:hover {
+  width: 26px;
 }
