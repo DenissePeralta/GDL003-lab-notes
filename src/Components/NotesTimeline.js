@@ -21,7 +21,8 @@ class NotesTimeline extends Component {
       let note = {
         id: snapshot.key,
         title: snapshot.val().title,
-        note: snapshot.val().note
+        note: snapshot.val().note,
+        user: snapshot.val().user
       }
       let notes = this.state.notes;
       notes.push(note);

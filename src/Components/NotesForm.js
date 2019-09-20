@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import postIcon from "../Images/alfilerIcon.png";
 import imageIcon from "../Images/imageIcon.png";
 import * as firebase from "firebase";
+import firebaseConfig from "../firebaseConfig";
 import "../App.css";
 
 class NotesForm extends Component {
@@ -9,7 +10,8 @@ class NotesForm extends Component {
     super();
     this.state = {
       title: "",
-      note: ""
+      note: "",
+      user: ""
     }
     this.createNote = this.createNote.bind(this);
   }
@@ -21,10 +23,12 @@ class NotesForm extends Component {
   }
 
   createNote () {
+    const userId = firebaseConfig.auth().currentUser.uid;
     if (this.state.title !== "" && this.state.note !== "" ) {
       firebase.database().ref("Notes").push({
         title: this.state.title,
         note: this.state.note,
+        user: userId
       })
     } else {
       alert("⚠️ Please enter a value in both fields to create a note");
