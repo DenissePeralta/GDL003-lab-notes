@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import postIcon from "../Images/alfilerIcon.png";
 import imageIcon from "../Images/imageIcon.png";
-import * as firebase from "firebase/app";
+import { database}  from "firebase/app";
 import firebaseConfig from "../firebaseConfig";
 import "../App.css";
 
@@ -25,7 +25,7 @@ class NotesForm extends Component {
   createNote () {
     const userId = firebaseConfig.auth().currentUser.uid;
     if (this.state.title !== "" && this.state.note !== "" ) {
-      firebase.database().ref("Notes").push({
+      database().ref("Notes").push({
         title: this.state.title,
         note: this.state.note,
         user: userId

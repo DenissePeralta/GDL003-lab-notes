@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as firebase from "firebase/app";
+import { database } from "firebase/app";
 import NavMenu from "./NavMenu";
 import NotesForm from "./NotesForm";
 import NotesList from "./NotesList";
@@ -13,7 +13,7 @@ class NotesTimeline extends Component {
     }
   }
   componentDidMount () {
-    this.db = firebase.database();
+    this.db = database();
     this.listenForChange();
   }
   listenForChange () {

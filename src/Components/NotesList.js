@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import deleteIcon from "../Images/deleteIcon.png";
 import editIcon from "../Images/editIcon.png";
-import * as firebase from "firebase/app";
+import {database} from "firebase/app";
 import "../App.css";
 
 class NotesList extends Component {
@@ -9,7 +9,7 @@ class NotesList extends Component {
   deleteNote (id) {
     const confirmDelete = window.confirm("⚠️ Do you want to delete the selected note?")
     if (confirmDelete) {
-      firebase.database().ref("Notes").child(id).remove();
+      database().ref("Notes").child(id).remove();
     }
     return;
   }

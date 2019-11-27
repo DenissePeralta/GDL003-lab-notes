@@ -3,7 +3,7 @@ import googleLogo from "../Images/GoogleLogo.png";
 import facebookLogo from "../Images/FacebookLogo.png";
 import firebaseConfig from "../firebaseConfig";
 import withFirebaseAuth from "react-with-firebase-auth";
-import * as firebase from "firebase/app";
+import { auth } from "firebase/app";
 import "../App.css";
 
 const LoginButton = (props) => {
@@ -25,8 +25,8 @@ const LogInSocial = (props) => {
 
 const firebaseAppAuth = firebaseConfig.auth();
 const providers = {
-  googleProvider: new firebase.auth.GoogleAuthProvider(),
-  facebookProvider: new firebase.auth.FacebookAuthProvider(),
+  googleProvider: new auth.GoogleAuthProvider(),
+  facebookProvider: new auth.FacebookAuthProvider(),
 };
 
 export default withFirebaseAuth({
