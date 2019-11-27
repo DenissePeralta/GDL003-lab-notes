@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/GDL003-lab-notes/static/css/main.9924c7b5.chunk.css",
+    "main.js": "/GDL003-lab-notes/static/js/main.2eb9b057.chunk.js",
+    "main.js.map": "/GDL003-lab-notes/static/js/main.2eb9b057.chunk.js.map",
+    "runtime~main.js": "/GDL003-lab-notes/static/js/runtime~main.1ae9ac07.js",
+    "runtime~main.js.map": "/GDL003-lab-notes/static/js/runtime~main.1ae9ac07.js.map",
+    "static/js/2.a73e5bfb.chunk.js": "/GDL003-lab-notes/static/js/2.a73e5bfb.chunk.js",
+    "static/js/2.a73e5bfb.chunk.js.map": "/GDL003-lab-notes/static/js/2.a73e5bfb.chunk.js.map",
+    "index.html": "/GDL003-lab-notes/index.html",
+    "precache-manifest.3c307635052d41d0582364f6d32b48ee.js": "/GDL003-lab-notes/precache-manifest.3c307635052d41d0582364f6d32b48ee.js",
+    "service-worker.js": "/GDL003-lab-notes/service-worker.js",
+    "static/css/main.9924c7b5.chunk.css.map": "/GDL003-lab-notes/static/css/main.9924c7b5.chunk.css.map",
+    "static/media/HourTimeLogo.png": "/GDL003-lab-notes/static/media/HourTimeLogo.fbd6d890.png",
+    "static/media/App.css": "/GDL003-lab-notes/static/media/backgroundMain.a76166ff.jpg"
+  }
+}
