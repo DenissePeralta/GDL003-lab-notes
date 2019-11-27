@@ -29,7 +29,10 @@ class NotesForm extends Component {
         title: this.state.title,
         note: this.state.note,
         user: userId
-      })
+      }).then(
+        this.state.title = "",
+        this.state.note = ""
+        )
     } else {
       alert("⚠️ Please enter a value in both fields to create a note");
     }
