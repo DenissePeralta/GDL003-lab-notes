@@ -25,7 +25,7 @@ const SignUp = ({ history }) => {
       <section className="signupContainer">
         <img src={logo} className="loginLogo" alt="logo" />
         <p>Please enter the require information to sign up or return to the <Link to="/">log in</Link> page.</p>
-        <form onSubmit={handleSignUp}>
+        <form className="signupForm" onSubmit={handleSignUp}>
           <input className="emailInput" name="email" type="email" placeholder="👩 Enter an email"/><br></br>
           <input className="passwordInput" name="password" type="password" placeholder="🔒 Enter a password"/><br></br>
           <button className="signupButton" type="submit"> Sign Up </button>

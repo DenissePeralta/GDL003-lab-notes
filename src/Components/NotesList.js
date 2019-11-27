@@ -13,6 +13,9 @@ class NotesList extends Component {
     }
     return;
   }
+  editNote (id) {
+    window.confirm("⚠️ Do you want to edit the selected note?")
+  }
 
   render() {
     return (
@@ -23,7 +26,7 @@ class NotesList extends Component {
             <div className="bodyPosted">{note.note}</div>
             <div className="notePostedButtons">
               <img onClick={() => this.deleteNote(note.id)} className="deleteButton" src={deleteIcon} alt="delete icon" key={note.id}/>
-              <img onClick={{/*() => this.editNote(note.id)*/}} className="editButton" src={editIcon} alt="edit icon" key={note.id}/>
+              <img onClick={() => this.editNote(note.id)} className="editButton" src={editIcon} alt="edit icon" key={note.id}/>
             </div>
           </section>
         ))}
