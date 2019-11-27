@@ -3,7 +3,7 @@ import googleLogo from "../Images/GoogleLogo.png";
 import facebookLogo from "../Images/FacebookLogo.png";
 import firebaseConfig from "../firebaseConfig";
 import withFirebaseAuth from "react-with-firebase-auth";
-import { auth } from "firebase/app";
+import {auth} from "firebase/app";
 import "../App.css";
 
 const LoginButton = (props) => {

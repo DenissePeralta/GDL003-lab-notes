@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import postIcon from "../Images/alfilerIcon.png";
 import imageIcon from "../Images/imageIcon.png";
-import { database}  from "firebase/app";
+import {database}from "firebase/app";
 import firebaseConfig from "../firebaseConfig";
 import "../App.css";
 
@@ -29,9 +29,12 @@ class NotesForm extends Component {
         title: this.state.title,
         note: this.state.note,
         user: userId
-      }).then(
-        this.state.title = "",
-        this.state.note = ""
+      }).then(() => {
+        this.setState({
+          title: "",
+          note: ""
+        })
+      } 
         )
     } else {
       alert("⚠️ Please enter a value in both fields to create a note");
