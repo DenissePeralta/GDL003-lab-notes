@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import deleteIcon from "../Images/deleteIcon.png";
 import editIcon from "../Images/editIcon.png";
-import * as firebase from "firebase";
+import * as firebase from "firebase/app";
 import "../App.css";
 
 class NotesList extends Component {

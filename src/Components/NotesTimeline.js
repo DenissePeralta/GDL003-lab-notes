@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as firebase from "firebase";
+import * as firebase from "firebase/app";
 import NavMenu from "./NavMenu";
 import NotesForm from "./NotesForm";
 import NotesList from "./NotesList";

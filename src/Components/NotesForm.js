@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import postIcon from "../Images/alfilerIcon.png";
 import imageIcon from "../Images/imageIcon.png";
-import * as firebase from "firebase";
+import * as firebase from "firebase/app";
 import firebaseConfig from "../firebaseConfig";
 import "../App.css";
 
