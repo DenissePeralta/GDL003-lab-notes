@@ -13,6 +13,7 @@
 ## Resumen del Proyecto
 
 ![Hour Time Logo](https://i.ibb.co/PxLM8wP/logo2.png)
+
 Hour Time es una aplicación web que sirve para guardar notas, es decir que nos permitirá crearlas, editarlas, eliminarlas y consultarlas en cualquier momento. Las notas se almacemarán de forma segura en una base de datos (Firebase).
 
 
