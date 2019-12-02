@@ -2,77 +2,58 @@
 
 ## Índice
 
-- [Preámbulo](#preámbulo)
 - [Resumen del proyecto](#resumen-del-proyecto)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Consideraciones generales](#consideraciones-generales)
-- [Hacker Edition](#hacker-edition)
-- [Pistas & Tips](#pistas-&-tips)
-
-## Preámbulo
-
-![Shows CRUD functionalities](https://raw.githubusercontent.com/florenciasilva/lab-notes/master/demo-crud.gif?token=AGJBHNTVAQRWOVF2IGMP6FK5NVFAS)
-
-
-No existe día que no tomemos notas, siempre necesitamos apuntar alguna dirección, número telefónico, algunos notas de alguna reunión, o hasta guardar nuestras URLs favoritas para  poder consultarlas más tarde. Muchas veces para esta actividad utilizamos libretas o agendas que terminan siendo olvidadas, se guardan en algún mensaje de texto o hasta terminando siendo escritas en la palma de nuestra mano.
-
-Hoy en día la mayoría de la población cuenta con algún dispositivo mobile o laptop y además todos nos estamos preocupando por implementar acciones para salvar el medio ambiente, por ello a una Laboratorian se le ocurre la idea de implementar una  web app para tomar notas, que nos permita crearlas, editarlas, eliminarlas y consultarlas en cualquier momento.
-
-Ella esta enamorada de la idea y quiere llevarla acabo, pero no tiene el tiempo necesario para empezar el proyecto ya que planea que sea un proyecto independiente a su trabajo, Por ello esta buscando dentro de la comunidad de Laboratoria para que implementen la idea, por lo cual te pedimos que la ayudes.
+- [Instrucciones de uso](#instrucciones-de-uso)
+- [Usuarios](#usuarios)
+- [Prototipo](#prototipo)
+- [Herramientas](#herramientas)
+- [Proyecto creado por:](#proyecto-creado-por:)
 
 
 ## Resumen del Proyecto
 
-Para este proyecto necesitas crear una Web App con `React`, `Firebase` y `react-router`.
-
-Si bien la temática es libre, tendrá que tener ciertas funcionalidades básicas:
-* Puedo autenticarme con Correo y/o Google y/o Facebook.
-* Puedo cerrar sesión.
-* Puedo crear una nueva entrada/post
-* Puedo ver mis entradas/posts
-* Puedo editar mis entradas/posts
-* Puedo borrar mis entradas/posts
+![Hour Time Logo](https://i.ibb.co/PxLM8wP/logo2.png)
+Hour Time es una aplicación web que sirve para guardar notas, es decir que nos permitirá crearlas, editarlas, eliminarlas y consultarlas en cualquier momento. Las notas se almacemarán de forma segura en una base de datos (Firebase).
 
 
-Para este proyecto deberemos manejar `vistas`. Esto significa que cada sección tendrá su propia URL, la cual indica que `vista` o `componente` será mostrado en pantalla. Para ello necesitaremos investigar acerca de `react-router` y el concepto de `Single Page Application`.
+## Instrucciones de uso
+1. Ingresa a la página de incio de [Hour Time!](https://denisseperalta.github.io/GDL003-lab-notes/#/).
+2. En la pantalla de inicio se podrá crear una cuenta en la aplicación dando clic en el link `Sign up`.
+3. Se deberán llenar los 2 campos obligatorios de email y password, posteriormente dar clic en el botón `Sign up`.
+4. Esta acción iniciará sesión automáticamente y te llevará a la página principal donde se podrán visualizar, crear, eliminar y editar las notas.
+5. Para iniciar sesión con email y password se deberán llenar los campos del mismo nombre y dar clic en el botón de `Log in`.
+6. Para iniciar sesión con una cuenta de Google o de Facebook se deberá dar clic en el botón de `Sign in with Google` o `Sign in with Facebook`.
+7. Una vez en la página principal, se podrán crear notas en la sección amarilla al dar clic en el ícono del pin/chincheta.
+8. Se visualizarán las notas creadas de las más antiguas a las más nuevas. Estas se podrán editar o eliminar haciendo clic en el ícono correspondiente.
+9. Para cerrar sesión dar clic en el link de la parte superior derecha con el correoÇ/nombre de usuario y el ícono de `Log out`.
+
+## Usuarios
+Por su diseño esta aplicación va dirigida a mujeres mayores de 12 años que hablen inglés y requieran tomar notas digitales desde cualquier dispositivo electrónico.
+
+### Necesidades cubiertas
+* Practicidad al tener notas de forma digital.
+* Acceso rápido mediante algunas redes sociales.
+* Seguridad al requerir inicio de sesión para poder visualizar las notas.
+* Visualización desde cualquier tipo de tableta o teléfono inteligente.
+
+## Prototipo
+
+Se realizó el siguiente prototipo de alta fidelidad, tanto para escritorio como para celular.
+
+- [Prototipo de Alta Fidelidad](https://www.figma.com/file/Py0RzZnxXYutiDWWKFUanU/Laboratoria-Lab-notes?node-id=0%3A1)
 
 
-## Objetivos de Aprendizaje
-
-Este será nuestro primer proyecto utilizando la biblioteca de React. Por ello nos concentraremos en entender las bases de React, como `estado`, `ciclos de vida`, `componentes`, `render` y como mantener sincronizados el estado con la vista de nuestra interfaz.
-
-## Consideraciones Generales
-
-Este proyecto se debe "resolver" de forma individual.
-
-Trabaja en una historia hasta terminarla antes de pasar a la siguiente. Trabaja hasta la historia que puedas en el tiempo especificado.
-
-La lógica del proyecto debe estar implementada completamente en React.
-
-La aplicación debe ser un Single Page Application.
-
-La aplicación debe hacer uso de npm-scripts y contar con scripts start, test, build y deploy, que se encarguen de arrancar, correr las pruebas, empaquetar y desplegar la aplicación respectivamente.
-
-Implementar test unitarios incluyendo el porcentaje de coverage.
-
-## Hacker Edition
-
-Una vez que hayas terminado las funcionalidades base del proyecto, puedes pasarte a esta sección.
-
-* Si la usuaria empieza a escribir una nota y por alguna razón la pestaña del navegador se cierra, cuando vuelva a abrir esta, la nota debería mostrarse como estaba.
-* Puedo ver el número de veces que he editado mi entradas/posts
-* Puedo subir imágenes
-* Consumo de API/s (Google Maps, Spotify, Pinterest, etc)
-* Progressive Web App (PWA)
-
-
-# Pistas & Tips
+# Herramientas
 
 * [Reactjs](https://reactjs.org/)
 * [create-react-app](https://create-react-app.dev/docs/getting-started)
 * [react-router](https://reacttraining.com/react-router/web/guides/quick-start)
 * [npm-scripts](https://docs.npmjs.com/misc/scripts)
 * [deploy con gh-pages](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a)
-* [Tu primera Progressive Web App - Google developers](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=es)
-* [Usando Service Workers - MDN](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-* [What is a Single Page Application](https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58)
+* Figma
+* Firebase
+* Ribbet
+
+# Proyecto creado por:
+
+Denisse Peralta Barrales [LinkedIn](https://www.linkedin.com/in/denisse-peralta-barrales/)
