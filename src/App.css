@@ -28,16 +28,16 @@ code {
   background: url("./Images/backgroundLogin.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  font-size: 20px;
+  color: #000000;
+  font-size: 22px;
   height: 100vh;
   text-align: center;
   width: 100%;
-  color: #000000;
 }
 
 .loginLogo {
   margin-top: 20px;
-  width: 30%;
+  width: 35%;
 }
 
 .loginForm, .signupForm {
@@ -48,11 +48,11 @@ code {
   background: rgba(255,255,255,0.4);
   border: 2px solid #FFFFFF;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: bold;
   margin-bottom: 19px;
   padding: 8px;
-  width: 30%;
+  width: 32%;
 }
 
 .loginButtons, .signupButton {
@@ -65,7 +65,7 @@ code {
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 8px;
-  width: 25%;
+  width: 30%;
 }
 
 .loginButtons img {
@@ -74,9 +74,6 @@ code {
 
 /*NotesTimeline.js NotesTimeline component */
 .notesContainer {
-  /* background: url("./Images/backgroundMain.jpg") repeat;
-  background-position: center center;
-  background-size: cover; */
   font-size: 17px;
   height: 100vh;
   text-align: center;
@@ -87,28 +84,27 @@ code {
 .navContainer {
   display: grid;
   grid-template-columns: 33.32% 33.32% 33.32%;
-  height: 15%;
-  margin-bottom: 50px;
+  height: 22%;
+  margin-bottom: 40px;
   align-items: center;
 }
 
 .navLogo {
   grid-column-start: 2;
   justify-self: center;
-  width: 65%;
+  width: 80%;
 }
 
 .logoutButton {
   font-size: 14px;
   font-weight: bold;
   grid-column-start: 3;
-  justify-self: end;
+  justify-self: center;
   text-decoration: none;
 }
 
 .logoutButton img {
   margin-left: 6px;
-  margin-right: 20px;
   width: 25px;
 }
 
@@ -167,7 +163,8 @@ code {
 .noteListContainer {
   margin: auto;
   margin-top: 10px;
-  width: 80%;
+  height: auto;
+  width: 90%;
 }
 
 .notePosted {
@@ -179,9 +176,9 @@ code {
   grid-template-columns: 99%;
   grid-template-rows: 23% 50% 24%;
   height: 190px;
-  margin: 7px;
+  margin: 10px;
   padding: 8px;
-  width: 30%;
+  width: 28%;
 }
 
 .titlePosted {
@@ -220,4 +217,192 @@ code {
 
 .deleteButton:hover, .editButton:hover {
   width: 26px;
+}
+
+
+/* Section for the media queries */
+@media screen and (min-width: 700px) and (max-width: 940px) {
+  .loginLogo {
+    width: 55%;
+  }
+
+  .emailInput, .passwordInput {
+    font-size: 22px;
+    width: 48%;
+  }
+  
+  .loginButtons, .signupButton {
+    font-size: 22px;
+    width: 45%;
+  }
+
+  .navLogo {
+    width: 95%;
+  }
+
+  .logoutButton {
+    justify-self: center;
+  }
+
+  .noteListContainer {
+    width: 98%;
+    margin-left: 15px;
+  }
+
+  .notePosted {
+    margin: 7px;
+  }
+
+  .notesFormContainer {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 441px) and (max-width: 699px) {
+  .loginContainer, .signupContainer {
+    background: url("./Images/backgroundLoginM.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  body {
+    background: url("./Images/backgroundMainM.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .loginLogo {
+    width: 75%;
+  }
+
+  .emailInput, .passwordInput {
+    width: 65%;
+  }
+  
+  .loginButtons, .signupButton {
+    width: 55%;
+  }
+
+  .navContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    height: 28%;
+    margin-bottom: 5px;
+  }
+
+  .navLogo {
+    align-self: stretch;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 50%;
+  }
+
+  .logoutButton {
+    align-self: center;
+    font-size: 12px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: center;
+  }
+  
+  .logoutButton img {
+    align-self: center;
+    width: 20px;
+  }
+
+  .noteListContainer {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .notePosted {
+    margin: 5px;
+    width: 42%;
+  }
+
+  .notesFormContainer {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 440px) {
+  .loginContainer, .signupContainer {
+    background: url("./Images/backgroundLoginM.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-size: 18px;
+  }
+
+  body {
+    background: url("./Images/backgroundMainM.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .loginLogo {
+    width: 80%;
+  }
+
+  .loginForm, .signupForm {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  
+  .emailInput, .passwordInput {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  
+  .loginButtons, .signupButton {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    padding: 6px;
+    width: 62%;
+  }
+
+  .navContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    height: 28%;
+    margin-bottom: 5px;
+  }
+
+  .navLogo {
+    align-self: stretch;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 68%;
+  }
+
+  .logoutButton {
+    align-self: center;
+    font-size: 12px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: center;
+  }
+  
+  .logoutButton img {
+    align-self: center;
+    width: 18px;
+  }
+
+  .noteListContainer {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .notePosted {
+    margin: 5px;
+    width: 85%;
+  }
+
+  .notesFormContainer {
+    width: 78%;
+  }
 }

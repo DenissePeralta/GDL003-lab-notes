@@ -31,13 +31,13 @@ const LogIn = ({ history }) => {
   return (
     <section className="loginContainer">
       <img src={logo} className="loginLogo" alt="logo"/>
-      <p>Create notes to keep everything in mind. Please, log in to start or <Link to="/signup">sign up</Link>.</p>
       <form className="loginForm" onSubmit={handleLogIn}>
+        <p>Create notes to keep everything in mind. Please, log in to start or <Link to="/signup">sign up</Link>.</p>
         <input className="emailInput" name="email" type="email" placeholder="👩 User email"/><br></br>
         <input className="passwordInput" name="password" type="password" placeholder="🔒 User password"/><br></br>
         <button className="loginButtons" type="submit"> Log in </button><br></br>
-      </form>
       <LogInSocial />
+      </form>
     </section>
   );
 };
